@@ -1,18 +1,18 @@
 {
-    "name": ":vendor/:package_name",
+    "name": "scool/enrollment",
     "type": "library",
-    "description": ":package_description",
+    "description": "Enrollment module package for Scool",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "scool",
+        "enrollment"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/scool/enrollment",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "Sergi Tur Badenas",
+            "email": "sergiturbadenas@gmail.com",
+            "homepage": "https://github.com/acacha",
             "role": "Developer"
         }
     ],
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":vendor\\:package_name\\": "src"
+            "Scool\\Enrollment\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor\\:package_name\\": "tests"
+            "Scool\\Enrollment\\": "tests"
         }
     },
     "scripts": {

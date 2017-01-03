@@ -1,6 +1,6 @@
 <?php
 
-namespace League\Skeleton;
+namespace Scool\Enrollment;
 
 class SkeletonClass
 {
