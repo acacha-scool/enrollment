@@ -16,6 +16,13 @@ class Enrollment extends Model
      *
      * @var array
      */
-//    protected $fillable = ['name', 'order','study_id'];
+    protected $fillable = ['user_id','study_id','course_id','classroom_id'];
 
+    /**
+     * Get the details for the enrollment.
+     */
+    public function details()
+    {
+        return $this->hasMany(EnrollmentSubmodule::class);
+    }
 }

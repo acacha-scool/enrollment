@@ -24,6 +24,11 @@ class CreateEnrollmentsTable extends Migration
             $table->integer('classroom_id')->unsigned()->nullable();
             $table->string('state')->nullable();
             $table->timestamps();
+            $table->index(['user_id', 'study_id','course_id','classroom_id']);
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('study_id')->references('id')->on('studies');
+            $table->foreign('course_id')->references('id')->on('courses');
+            $table->foreign('classroom_id')->references('id')->on('classrooms');
         });
 
     }
